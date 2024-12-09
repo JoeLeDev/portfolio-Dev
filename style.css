@@ -363,40 +363,30 @@ span{
     display: grid;
     grid-template-columns: repeat(2,1fr) ;
     align-items: center;
-    gap: 2.5rem;
+    gap: 6.5rem;
 }
 .service-box{
-    background-color: var(--main-color);
-    height: 300px;
-    border-radius: 3rem;
-    border: 5px solid transparent;
+    background: var(--second-bg-color);
+    padding: 30px 40px;
+    border-radius: 2rem;
+    box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    height: 350px;
 }
 .service-box:hover{
-    background: #fff;
-    color: #000;
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px var(--main-color);
 }
-.service-box .service-info{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
-}
-.service-info h4{
-font-size: 3rem;
-line-height: 2;
-font-weight: 800;
-}
-.service-info p{
-    font-size: 1.6rem;
-    font-weight: 600;
-    max-height: 100px;
+.service-box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
 }
 .projets{
     background: var(--second-bg-color);
@@ -412,20 +402,17 @@ font-weight: 800;
     margin-bottom: 5rem;
 }
 .projets-box img{
-    width: 20rem;
-    height: 168px;
-    border-radius: 30%;
-    border: 3px solid var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
+    width: 500px;
+    height: 500px;
 }
 .wrapper{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
 }
 .projet-item{
-    height: 550px;
-    max-width: 450px;
+    height: fit-content;
+   
     background: rgba(0, 0, 0, 0,7);
     border: 3px solid rgba(238, 238,238 , 0.2 );
     border-radius: 2rem;
@@ -439,6 +426,8 @@ font-weight: 800;
     gap: 1.5rem;
     color: #fff;
     transition: 0.4 ease-in-out;
+    display: flex;
+    flex-direction: row;
 }
 .projet-item:hover{
     border: 3px solid var(--main-color);

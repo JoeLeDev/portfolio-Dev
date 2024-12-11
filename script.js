@@ -23,3 +23,18 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+function toggleText(element) {
+
+    const textElement = element.nextElementSibling;
+    const parentDiv = element.parentElement;
+
+    if (textElement.style.display === "none" || textElement.style.display === "") {
+        textElement.style.display = "block";
+        parentDiv.style.height = "480px"; 
+    } else {
+      textElement.style.display = "none";
+        parentDiv.style.height = "fit-content";
+    }
+  }
+  

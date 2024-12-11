@@ -69,7 +69,7 @@ body{
 }
 
 section{
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 10rem 12% 10rem;
 }
 .home{
@@ -354,40 +354,76 @@ span{
 .services{
     background: var(--bg-color);
     color: #000;
+    height: fit-content;
 }
 .services h2{
     margin-bottom: 5rem;
     color: #fff;
 }
-.services-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr) ;
+.services-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .service-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 6.5rem;
-}
-.service-box{
-    background: var(--second-bg-color);
-    padding: 30px 40px;
+    width: 550px;
+  }
+  
+  .service-info {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0,7);
+    border: 3px solid rgba(238, 238,238 , 0.2 );
     border-radius: 2rem;
-    box-shadow: 0 0 25px var(--main-color);
+    padding: 10px 10px;
     cursor: pointer;
-    transition: 0.4s ease-in-out;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
     color: #fff;
+    transition: 0.4 ease-in-out;
+
+  }
+  
+  .service-info img {
+    width: 100px; 
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  .service-text {
+    display: none; 
+    margin: 10px 0px;
     font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-    height: 350px;
-}
-.service-box:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 0 50px var(--main-color);
-}
-.service-box img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
-}
+    color: #fff;
+    width: fit-content;
+    list-style: none;
+  }
+  
+  .service-logo {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-logo:hover {
+    transform: scale(1.1); 
+  }
+  
+  
+  .service-box:hover img {
+    transform: scale(1.1); 
+    opacity: 0.3; 
+  }
+  
+
+  
 .projets{
     background: var(--second-bg-color);
 }
@@ -420,8 +456,6 @@ span{
     margin: 0 2rem;
     padding: 30px 60px;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 1.5rem;
@@ -437,7 +471,7 @@ span{
     font-size: 2.8rem;
 }
 .projet-item p{
-    font-size: 1.3rem;
+    font-size: 16px;
 }
 
 .text{
@@ -450,7 +484,7 @@ span{
 }
 @media(min-width:1700px){
     .text{
-        padding: 0px 255px;
+        margin-left: 5%;
     }
 }
 .text p {
@@ -459,6 +493,19 @@ font-weight: 300;
 line-height: 22px;
 }
 
+.text img{
+    width: 50px;
+    border-radius: 0px;
+}
+
+.Techno {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
 
 .contact{
     background-color: var(--bg-color);
@@ -562,13 +609,41 @@ line-height: 22px;
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
         display: flex;
-        flex-direction: column;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    .service-box{
+        height: 100%;
     }
     .projet-item{
-        display: flex;
         flex-direction: column;
+        padding: 0px;
+    }
+
+    .projets-box{
+        gap: 5rem;
+    }
+    .text img{
+        width: 30px !important;
+        margin-bottom: 20px;
+    }
+    .projet-item h2{
+        font-size: 2rem;
+    }
+    .projet-item img{
+        width: 300px;
+    }
+    .text{
+        width: 50%c;
+    }
+    .heading {
+        font-size: 5rem;
     }
 }
+
+
+
+
 @media(max-width:991px){
     header{
         padding: 2rem 3%;
@@ -603,6 +678,8 @@ line-height: 22px;
         padding: 2rem 3%;
     }
 }
+
+
 @media(max-width:899px){
     #menu-icon{
         display: block;

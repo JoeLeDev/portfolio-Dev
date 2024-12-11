@@ -41,7 +41,7 @@
             </div>
         </div>
             <div class="home-img">
-                <img src="LUEMBE Jonathan.jpg" alt="">
+                <img src="./assets/LUEMBE Jonathan.jpg" alt="">
             </div>
     </section>
 
@@ -100,18 +100,19 @@
     </section>
 
     <section class="services" id="services">
-        <h2 class="heading">Services</h2>
+        <h2 class="heading">Compétences</h2>
 
         <div class="services-container">
             <div class="service-box">
                 <div class="service-info">
-                    
-                    <img src="React.png" alt="">
-                    <p>Je propose des services de design d'interface utilisateur modernes et intuitifs,
-                        en mettant l'accent sur l'expérience utilisateur. Grâce à des outils puissants comme Figma
-                        ,je conçois des interfaces élégantes et fonctionnelles adaptées aux besoins des utilisateurs.
-                        Mon approche se concentre sur l'harmonie entre esthétique et performance, garantissant que chaque
-                        projet allie créativité et efficacité.</p>
+                    <img src="./assets/React.png" alt="React" class="service-logo" onclick="toggleText(this)">
+                    <ul class="service-text">
+                        <h2>React</h2>
+                        <li>Création d’interfaces utilisateur dynamiques et interactives.</li> <br>
+                        <li>Composants réutilisables pour des applications évolutives.</li> <br>
+                        <li>Optimisation des performances et expérience utilisateur fluide.</li> <br>
+                      </ul>
+                      
                 </div>
             </div>
        
@@ -119,35 +120,55 @@
            
             <div class="service-box">
                 <div class="service-info">
-                    
-                    <img src="Nodes.js.png" alt="">
-                    <p>Bien que j'ai une préférence pour le front-end, mon expertise couvre également le développement
-                    back-end notamment avec la création d'API RESTful avec express et la gestion de bases de données.
-                    Ce qui me permet de concevoir des solutions complètes et optimisées. Je m'engage à transformer vos idées
-                    en projets web robustes, tout en respectant les bonnes pratiques du développement.</p>
+                  <img src="./assets/Nodes.js.png" alt="Node.js" class="service-logo" onclick="toggleText(this)">
+                  <ul class="service-text">
+                    <h2>Nodes.js</h2>
+                    <li>Développement de serveurs rapides et évolutifs</li> <br>
+                    <li>Utilisation de frameworks comme Express.js.</li><br>
+                    <li>Intégration fluide avec MongoDB et autres bases de données.</li><br>
+                  </ul>
                 </div>
-            </div>
+              </div>
+
+              <div class="service-box">
+                <div class="service-info">
+                  <img src="./assets/wordpress.png" alt="WordPress" class="service-logo" onclick="toggleText(this)">
+                  <ul class="service-text">
+                    <h2>Wordpress</h2>
+                    <li>Conception de sites web adaptatifs et performants.</li><br>
+                    <li>Personnalisation avancée grâce à des thèmes et plugins.</li><br>
+                    <li>Gestion efficace du contenu pour des besoins variés.</li><br>
+                  </ul>
+                  
+                </div>
+              </div>
+
 
             <div class="service-box">
                 <div class="service-info">
                     
-                    <img src="wordpress.png" alt="">
-                        <p>Avec WordPress, je crée des sites web professionnels, personnalisés et faciles à gérer.
-                         Je mets à profit cette plateforme flexible pour développer des projets variés allant des
-                          blogs aux boutiques en ligne. Lors de ma première experience professionnel j'ai beaucoup travaillé
-                          avec le plugin Elementor.</p>
+                    <img src="./assets/MangoDb.png" class="service-logo" onclick="toggleText(this)">
+                    <ul class="service-text">
+                        <h2>MangoDb</h2>
+                        <li>Gestion de données avec une base NoSQL rapide et flexible.</li><br>
+                        <li>Modélisation de données pour des applications scalables.</li><br>
+                        <li>Intégration facile avec des environnements JavaScript/Node.js.</li><br>
+                      </ul>
+                      
                 </div>
             </div>
             
             <div class="service-box">
                 <div class="service-info">
                     
-                    <img src="figma.png" alt="">
-                    <p>Je maîtrise Figma pour le design d'interfaces utilisateur innovantes et attrayantes.
-                        En collaboration avec vos idées, je crée des maquettes précises et interactives, mettant en avant
-                        une expérience utilisateur fluide et centrée sur vos objectifs. Mon approche assure une transition
-                        harmonieuse entre le design et le développement.</p>
-                </div>
+                    <img src="./assets/figma.png" class="service-logo" onclick="toggleText(this)">
+                    <ul class="service-text">
+                        <h2>Figma</h2>
+                        <li>Création de maquettes interactives et intuitives.</li><br>
+                        <li>Création de prototypes engageants.</li><br>
+                        <li>Design centré sur l’utilisateur pour des expériences fluides.</li><br>
+                      </ul>
+                      
             </div>
         </div>
     </section>
@@ -156,32 +177,60 @@
         <div class="projets-box">
             <h2 class="heading">Projets</h2>
             <div class="wrapper">
-                <a href="https://joeledev.github.io/Jeu-devinette-One-piece/">
-                        <div class="projet-item">
-                            <img src="Mockup.jpg" alt="">
+                            <a href="https://joeledev.github.io/Jeu-devinette-One-piece/">
+                <div class="projet-item">
+                            <img src="./assets/Mockup.jpg" alt="">
                                 <div class="text">
-                                    <h2>One Piece Guess</h2>
-                                    <p>Le projet « Guess the Pirate: One Piece Challenge » est un jeu de devinette qui est basé sur l’univers de
-                                        « One Piece », une série manga populaire. Dans ce jeu, les joueurs doivent deviner le nom du 
-                                        personnage affiché à l’écran en saisissant leur réponse dans un champ de texte à l’image d’un 
-                                        pendu avec un nombre de chance au nombre de sept.
-                                        J’ai développé ce projet en utilisant les langages HTML, CSS et JavaScript, démontrant ainsi ma 
-                                        maîtrise de ces technologies front-end et liant ma passion pour le manga avec mon futur métier.</p>
+                                    <h2>Music playlists</h2>
+                                    <p>Cette application est une plateforme musicale permettant aux utilisateurs de rechercher
+                                        des chansons via l'API Spotify, de les ajouter dans une base de données locale, de créer
+                                        et gérer des playlists, et de voir des détails sur les playlists avec des options
+                                        d'édition et de suppression. L'application se compose de deux parties : un backend 
+                                        construit avec Flask et un frontend simple en HTML/CSS/JavaScript.</p>
+                                        <div class="Techno">
+                                            <img src="./assets/python.png" alt="">
+                                            <img src="./assets/Javascript.webp" alt="">
+                                            <img src="./assets/postgres.webp" alt="">
+                                          </div>
+
                                 </div>
                             </div>
                 </a>
                         <a href="https://typescript-todo-sand.vercel.app/">
-                        <div class="projet-item">
-                            <img src="Todolist.jpg" alt="">
-                            <div class="text">
-                            <h2>Todolist</h2>
-                                <p>Cette application est une interface simple et intuitive pour gérer tes tâches quotidiennes.
-                                    Construite avec React, elle permet d’ajouter, de supprimer et de filtrer les tâches en un clic.
-                                    Son design épuré est accompagné d’une sauvegarde automatique des données pour ne jamais perdre le
-                                    fil de tes activités.</p>
+                            <div class="projet-item">
+                                <img src="./assets/Todolist.jpg" alt="">
+                                    <div class="text">
+                                    <h2>Todolist</h2>
+                                        <p>Cette application est une interface simple et intuitive pour gérer tes tâches quotidiennes.
+                                            Construite avec React, elle permet d’ajouter, de supprimer et de filtrer les tâches en un clic.
+                                            Son design épuré est accompagné d’une sauvegarde automatique des données pour ne jamais perdre le
+                                            fil de tes activités.</p>
+                                            <div class="Techno">
+                                                <img src="./assets/typescript.svg" alt="">
+                                            </div>
+                                    </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+
+                        <a href="https://myicconline.com/">
+                            <div class="projet-item">
+                                <img src="./assets/Myicc.jpg" alt="">
+                                    <div class="text">
+                                    <h2>My Icc Online</h2>
+                                        <p>Ce projet consistait à créer une plateforme interactive permettant la gestion de groupes et d'utilisateurs.
+                                            L'objectif était de fournir une expérience utilisateur fluide et engageante, avec un système de création et
+                                            de gestion de groupes, ainsi qu'une gestion des rôles et permissions des membres. Le design de l’interface a
+                                            été optimisé pour garantir une navigation simple et intuitive, tout en assurant une intégration harmonieuse
+                                            entre la conception et le développement.
+                                        </p>
+                                        <div class="Techno">
+                                            <img src="./assets/wordpress.png" alt="">
+                                            <img src="./assets/Elementor.webp" alt="">    
+                                            <img src="./assets/AdobeXd.webp" alt="">
+                                    </div>
+                                    </div>
+                            </div>
+                        </a>
             </div>
         </div>
     </section>

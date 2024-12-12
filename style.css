@@ -379,7 +379,6 @@ span{
     flex-direction: column;
     height: fit-content;
     background: rgba(0, 0, 0, 0,7);
-    border: 3px solid rgba(238, 238,238 , 0.2 );
     border-radius: 2rem;
     padding: 10px 10px;
     cursor: pointer;

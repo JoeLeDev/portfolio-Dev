@@ -485,6 +485,9 @@ span{
     .text{
         margin-left: 5%;
     }
+    .home-img img{
+        width: 10vw;
+    }
 }
 .text p {
 font-size: 16px;

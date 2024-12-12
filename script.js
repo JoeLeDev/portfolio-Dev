@@ -54,7 +54,7 @@ contactForm.addEventListener('submit', async (event) => {
 
   try {
 
-    const response = await fetch('/api/mail', {
+    const response = await fetch('https://portfolio-dev-silk-nu.vercel.app/api/mail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

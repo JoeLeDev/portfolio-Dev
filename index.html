@@ -243,16 +243,15 @@
         <form action="">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full name">
-                    <input type="email" placeholder="Email">
-                    
+                    <input type="text" name="" name="name" placeholder="Votre nom/entreprise" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
                         <input type="number" placeholder="Phone number">
-                        <input type="text" placeholder="Subject">
+                        <input type="text" name="subject" placeholder="Sujet du message" required>
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea name="" id="" cols="30" rows="10" name="message" placeholder="Votre message" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>

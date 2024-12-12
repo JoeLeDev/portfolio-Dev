@@ -1,7 +1,8 @@
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
+const contactForm = document.getElementById('contact-form');
 
 window.onscroll = () => {
     sections.forEach(section => {
@@ -37,5 +38,41 @@ function toggleText(element) {
         parentDiv.style.height = "fit-content";
     }
   }
-  
-  
+
+
+contactForm.addEventListener('submit', async (event) => {
+  event.preventDefault(); 
+
+
+  const formData = new FormData(contactForm);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    subject: formData.get('subject'),
+    message: formData.get('message'),
+  };
+
+  try {
+
+    const response = await fetch('/api/mail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+
+    if (response.ok) {
+      const result = await response.json();
+      alert('Message envoyé avec succès !');
+      contactForm.reset(); 
+    } else {
+      const error = await response.json();
+      alert(`Erreur : ${error.message}`);
+    }
+  } catch (err) {
+    console.error('Erreur lors de l\'envoi :', err);
+    alert('Une erreur est survenue. Veuillez réessayer plus tard.');
+  }
+});

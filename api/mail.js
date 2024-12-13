@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { name, email, subject, message } = req.body;
+    const { name, email, message } = req.body;
 
     if (!name || !email || !message) {
       return res.status(400).json({ message: 'Tous les champs requis ne sont pas remplis.' });

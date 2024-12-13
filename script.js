@@ -51,6 +51,8 @@ function toggleText(element) {
       message: formData.get('message'),
     };
   
+    console.log('Data sent:', data);
+    
     try {
       const response = await fetch('/api/mail', {
         method: 'POST', 

@@ -48,7 +48,6 @@ function toggleText(element) {
     const data = {
       name: formData.get('name'), 
       email: formData.get('email'),
-      subject: formData.get('subject'),
       message: formData.get('message'),
     };
   

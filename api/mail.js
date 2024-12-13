@@ -7,10 +7,7 @@ export default async function handler(req, res) {
     }
 
     try {
-      // Simuler l'envoi d'email sans utiliser SendGrid
       console.log(`Nom: ${name}, Email: ${email}, Sujet: ${subject}, Message: ${message}`);
-      
-      // Retourner une réponse de succès
       return res.status(200).json({ message: 'Message reçu avec succès' });
     } catch (error) {
       console.error(error);

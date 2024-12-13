@@ -38,41 +38,43 @@ function toggleText(element) {
         parentDiv.style.height = "fit-content";
     }
   }
-
-
-contactForm.addEventListener('submit', async (event) => {
-  event.preventDefault(); 
-
-
-  const formData = new FormData(contactForm);
-  const data = {
-    name: formData.get('name'),
-    email: formData.get('email'),
-    subject: formData.get('subject'),
-    message: formData.get('message'),
-  };
-
-  try {
-
-    const response = await fetch('https://portfolio-dev-silk-nu.vercel.app/api/mail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    });
-
-
-    if (response.ok) {
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault(); 
+  
+    const formData = new FormData(contactForm);
+    const data = {
+      name: formData.get('name'), 
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+    };
+  
+    try {
+      const response = await fetch('/api/mail', {
+        method: 'POST', 
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data), 
+      });
+  
+      if (!response.ok) {
+        throw new Error(`Erreur HTTP : ${response.status}`);
+      }
+  
       const result = await response.json();
-      alert('Message envoyé avec succès !');
-      contactForm.reset(); 
-    } else {
-      const error = await response.json();
-      alert(`Erreur : ${error.message}`);
+      console.log('Succès:', result);
+  
+
+      alert('Votre message a été envoyé avec succès !');
+    } catch (error) {
+      console.error('Erreur:', error);
+  
+      alert('Une erreur s\'est produite lors de l\'envoi du message.');
     }
-  } catch (err) {
-    console.error('Erreur lors de l\'envoi :', err);
-    alert('Une erreur est survenue. Veuillez réessayer plus tard.');
-  }
+  })
 });
+  

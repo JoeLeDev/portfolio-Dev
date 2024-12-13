@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     }
 
     try {
-      console.log(`Nom: ${name}, Email: ${email}, Sujet: ${subject}, Message: ${message}`);
+      console.log(`Nom: ${name}, Email: ${email}, Message: ${message}`);
       return res.status(200).json({ message: 'Message reçu avec succès' });
     } catch (error) {
       console.error(error);

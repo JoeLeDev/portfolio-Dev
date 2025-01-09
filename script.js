@@ -25,8 +25,43 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-function toggleText(element) {
+document.querySelector('header nav').onclick = () => {
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+}
+function addEventListeners() {
+    document.querySelectorAll('.service-logo').forEach(element => {
+        element.addEventListener('mouseover', function() {
+            toggleText(this);
+        });
+        element.addEventListener('mouseout', function() {
+            toggleText(this);
+        });
 
+       
+        if (window.innerWidth <= 768) {
+            element.addEventListener('click', function() {
+                toggleText(this);
+            });
+        }
+    });
+}
+
+// Appeler la fonction pour ajouter les écouteurs d'événements
+addEventListeners();
+
+// Réajouter les écouteurs d'événements lors du redimensionnement de la fenêtre
+window.addEventListener('resize', function() {
+    
+    document.querySelectorAll('.service-logo').forEach(element => {
+        element.replaceWith(element.cloneNode(true));
+    });
+
+    // Ajouter les nouveaux écouteurs d'événements
+    addEventListeners();
+});
+
+function toggleText(element) {
     const textElement = element.nextElementSibling;
     const parentDiv = element.parentElement;
 
@@ -34,7 +69,12 @@ function toggleText(element) {
         textElement.style.display = "block";
         parentDiv.style.height = "480px"; 
     } else {
-      textElement.style.display = "none";
+        textElement.style.display = "none";
         parentDiv.style.height = "fit-content";
     }
-  }
+}
+
+
+document.querySelectorAll('.service-text').forEach(element => {
+    element.style.display = "none";
+});

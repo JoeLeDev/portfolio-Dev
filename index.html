@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Jonathan Luembe</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
+
 <body>
 
 
     <header class="header">
-       <a href="#home" class="logo">Jonathan
-        <span>Luembe</span>
-       </a>
+        <a href="#home" class="logo">Jonathan
+            <span>Luembe</span>
+        </a>
 
-       <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-       <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#education">Parcours</a>
-        <a href="#services">Compétences</a>
-        <a href="#projets">Projets</a>
-        <a href="mailto:jonathanluembe@yahoo.com">Contact</a>
+        <nav class="navbar"> 
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Parcours</a>
+            <a href="#services">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="mailto:jonathanluembe@yahoo.com">Contact</a>
         </nav>
     </header>
 
@@ -32,8 +35,8 @@
             <h3 class="text-animation">I'm a <span></span></h3>
 
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/jonathanluembe/"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/JoeLeDev"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/jonathanluembe/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/JoeLeDev"><i class='bx bxl-github'></i></a>
             </div>
 
             <div class="btn-group">
@@ -41,9 +44,9 @@
                 <a href="mailto:jonathanluembe@yahoo.com" class="btn">Contact</a>
             </div>
         </div>
-            <div class="home-img">
-                <img src="./assets/LUEMBE Jonathan.jpg" alt="">
-            </div>
+        <div class="home-img">
+            <img src="./assets/LUEMBE Jonathan.jpg" alt="">
+        </div>
     </section>
 
     <section class="education" id="education">
@@ -53,13 +56,13 @@
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2013/2017</div>
-               
+                <div class="timeline-date">2013/2017</div>
+
                 <div class="timeline-content">
                     <h3> Lycée la marre carrée </h3>
                     <p>
                         Baccalauréat Littéraire
-                        
+
                         Apprentissage des disciplines littéraires
                         Développement des compétences d’expression
                     </p>
@@ -68,8 +71,8 @@
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022/2025</div>
-               
+                <div class="timeline-date">2022/2025</div>
+
                 <div class="timeline-content">
                     <h3> Hetic </h3>
                     <p>
@@ -83,14 +86,14 @@
 
             <div class="timeline-item">
                 <div class="timeline-dot"> </div>
-                    <div class="timeline-date">2023/2025</div>
-                
+                <div class="timeline-date">2023/2025</div>
+
                 <div class="timeline-content">
                     <h3> Impact Centre Chrétien </h3>
                     <p>
-                        En tant que développeur web en alternance, 
-                        j'ai travaillé sur des projets variés, notamment la création d'un réseau social et 
-                        d'un intranet en utilisant des outils tels que WordPress (avec Elementor) et React. 
+                        En tant que développeur web en alternance,
+                        j'ai travaillé sur des projets variés, notamment la création d'un réseau social et
+                        d'un intranet en utilisant des outils tels que WordPress (avec Elementor) et React.
                         Ces expériences m'ont permis d'allier compétences techniques et compréhension des besoins
                         des utilisateurs, tout en collaborant avec des équipes multidisciplinaires.
                     </p>
@@ -112,146 +115,186 @@
                         <li>Création d’interfaces utilisateur dynamiques et interactives.</li> <br>
                         <li>Composants réutilisables pour des applications évolutives.</li> <br>
                         <li>Optimisation des performances et expérience utilisateur fluide.</li> <br>
-                      </ul>
-                      
+                    </ul>
+
                 </div>
             </div>
-       
 
-           
-            <div class="service-box">
-                <div class="service-info">
-                  <img src="./assets/Nodes.js.png" alt="Node.js" class="service-logo">
-                  <ul class="service-text">
-                    <h2>Nodes.js</h2>
-                    <li>Développement de serveurs rapides et évolutifs</li> <br>
-                    <li>Utilisation de frameworks comme Express.js.</li><br>
-                    <li>Intégration fluide avec MongoDB et autres bases de données.</li><br>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="service-box">
-                <div class="service-info">
-                  <img src="./assets/wordpress.png" alt="WordPress" class="service-logo">
-                  <ul class="service-text">
-                    <h2>Wordpress</h2>
-                    <li>Conception de sites web adaptatifs et performants.</li><br>
-                    <li>Personnalisation avancée grâce à des thèmes et plugins.</li><br>
-                    <li>Gestion efficace du contenu pour des besoins variés.</li><br>
-                  </ul>
-                  
-                </div>
-              </div>
 
 
             <div class="service-box">
                 <div class="service-info">
-                    
+                    <img src="./assets/Nodes.js.png" alt="Node.js" class="service-logo">
+                    <ul class="service-text">
+                        <h2>Nodes.js</h2>
+                        <li>Développement de serveurs rapides et évolutifs</li> <br>
+                        <li>Utilisation de frameworks comme Express.js.</li><br>
+                        <li>Intégration fluide avec MongoDB et autres bases de données.</li><br>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <img src="./assets/wordpress.png" alt="WordPress" class="service-logo">
+                    <ul class="service-text">
+                        <h2>Wordpress</h2>
+                        <li>Conception de sites web adaptatifs et performants.</li><br>
+                        <li>Personnalisation avancée grâce à des thèmes et plugins.</li><br>
+                        <li>Gestion efficace du contenu pour des besoins variés.</li><br>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <div class="service-box">
+                <div class="service-info">
+
                     <img src="./assets/MangoDb.png" class="service-logo">
                     <ul class="service-text">
                         <h2>MangoDb</h2>
                         <li>Gestion de données avec une base NoSQL rapide et flexible.</li><br>
                         <li>Modélisation de données pour des applications scalables.</li><br>
                         <li>Intégration facile avec des environnements JavaScript/Node.js.</li><br>
-                      </ul>
-                      
+                    </ul>
+
                 </div>
             </div>
-            
+
             <div class="service-box">
                 <div class="service-info">
-                    
+
                     <img src="./assets/figma.png" class="service-logo">
                     <ul class="service-text">
                         <h2>Figma</h2>
                         <li>Création de maquettes interactives et intuitives.</li><br>
                         <li>Création de prototypes engageants.</li><br>
                         <li>Design centré sur l’utilisateur pour des expériences fluides.</li><br>
-                      </ul>
-                      
+                    </ul>
+
+                </div>
             </div>
-        </div>
     </section>
 
     <section class="projets" id="projets">
         <div class="projets-box">
             <h2 class="heading">Projets</h2>
-            <div class="wrapper">
-                            <a href="https://retourenedenacademy.com/">
-                <div class="projet-item">
-                            <img src="./assets/Retourenedenacademy.png" alt="">
-                                <div class="text">
-                                    <h2>Retour en Eden Academy</h2>
-                                    <p>Ce projet consistait à concevoir et développer une plateforme d’apprentissage en ligne 
-                                        basée sur Moodle. L’objectif était d’offrir un espace interactif pour la gestion des cours,
-                                         des utilisateurs et des évaluations. J’ai mis en place un système de rôles et permissions
-                                          avancé, des restrictions d’accès conditionnelles et optimisé l’expérience utilisateur
-                                           pour une navigation intuitive et efficace.</p>
-                                        <div class="Techno">
-                                            <img src="assets/Moodle-logo.svg.png" alt="">
-                                          </div>
-
-                                </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide project-reveal">
+                <a href="https://retourenedenacademy.com/">
+                    <div class="projet-item">
+                        <img src="./assets/Retourenedenacademy.png" alt="">
+                        <div class="text">
+                            <h2>Retour en Eden Academy</h2>
+                            <p>Ce projet consistait à concevoir et développer une plateforme d’apprentissage en ligne
+                                basée sur Moodle. L’objectif était d’offrir un espace interactif pour la gestion des
+                                cours,
+                                des utilisateurs et des évaluations. J’ai mis en place un système de rôles et
+                                permissions
+                                avancé, des restrictions d’accès conditionnelles et optimisé l’expérience utilisateur
+                                pour une navigation intuitive et efficace.</p>
+                            <div class="Techno">
+                                <img src="assets/Moodle-logo.svg.png" alt="">
                             </div>
+
+                        </div>
+                    </div>
                 </a>
-                        <a href="https://shopping-site-tawny-iota.vercel.app/">
-                            <div class="projet-item">
-                                <img src="./assets/E-shop.png" alt="">
-                                    <div class="text">
-                                    <h2>Jonas' shop</h2>
-                                        <p>Ce projet est un template de site e-commerce conçu pour mettre en avant mes compétences en intégration web. 
-                                            Il est développé avec React avec une architecture moderne et Tailwind CSS pour un style réactif et esthétique. 
-                                            Ce template démontre une mise en page soignée, des interactions fluides et une expérience utilisateur optimale, 
-                                            reflétant ma capacité à combiner design et performance technique dans le développement de sites marchands..</p>
-                                            <div class="Techno">
-                                                <img src="./assets/Tailwind.png" alt="">
-                                                <img src="./assets/React.png" alt="">
-                                            </div>
-                                    </div>
+                </div>
+                <div class="swiper-slide project-reveal">
+                <a href="https://shopping-site-tawny-iota.vercel.app/">
+                    <div class="projet-item">
+                        <img src="./assets/E-shop.png" alt="">
+                        <div class="text">
+                            <h2>Jonas' shop</h2>
+                            <p>Ce projet est un template de site e-commerce conçu pour mettre en avant mes compétences
+                                en intégration web.
+                                Il est développé avec React avec une architecture moderne et Tailwind CSS pour un style
+                                réactif et esthétique.
+                                Ce template démontre une mise en page soignée, des interactions fluides et une
+                                expérience utilisateur optimale,
+                                reflétant ma capacité à combiner design et performance technique dans le développement
+                                de sites marchands..</p>
+                            <div class="Techno">
+                                <img src="./assets/Tailwind.png" alt="">
+                                <img src="./assets/React.png" alt="">
                             </div>
-                        </a>
-
-                        <a href="https://myicconline.com/">
-                            <div class="projet-item">
-                                <img src="./assets/Myicc.jpg" alt="">
-                                    <div class="text">
-                                    <h2>My Icc Online</h2>
-                                        <p>Ce projet consistait à créer une plateforme interactive permettant la gestion de groupes et d'utilisateurs.
-                                            L'objectif était de fournir une expérience utilisateur fluide et engageante, avec un système de création et
-                                            de gestion de groupes, ainsi qu'une gestion des rôles et permissions des membres. Le design de l’interface a
-                                            été optimisé pour garantir une navigation simple et intuitive, tout en assurant une intégration harmonieuse
-                                            entre la conception et le développement.
-                                        </p>
-                                        <div class="Techno">
-                                            <img src="./assets/wordpress.png" alt="">
-                                            <img src="./assets/Elementor.webp" alt="">    
-                                            <img src="./assets/AdobeXd.webp" alt="">
-                                    </div>
-                                    </div>
-                            </div>
-                        </a>
+                        </div>
+                    </div>
+                </a>
             </div>
+            <div class="swiper-slide project-reveal">
+                <a href="https://github.com/JoeLeDev/DashboardAdmin">
+                    <div class="projet-item">
+                        <img src="./assets/Panel Admin.png" alt="">
+                        <div class="text">
+                            <h2>Pannel Admin</h2>
+                            <p>Ce projet est un tableau de bord administrateur développé avec React et Firebase. Il
+                                permet de gérer des utilisateurs avec un système d’authentification, des rôles
+                                dynamiques (admin / user), et l’édition des profils incluant l’upload de photo via
+                                Firebase Storage.
+                                L’interface est responsive, avec un mode sombre et des notifications toast pour une UX
+                                fluide et moderne.
+                            <div class="Techno">
+                                <img src="./assets/React.png" alt="">
+                                <img src="./assets/Tailwind.png" alt="">
+                                <img src="./assets/Firebase.png" alt="">
+                                <img src="./assets/Vite.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide project-reveal">
+                <a href="https://myicconline.com/">
+                    <div class="projet-item">
+                        <img src="./assets/Myicc.jpg" alt="">
+                        <div class="text">
+                            <h2>My Icc Online</h2>
+                            <p>Ce projet consistait à créer une plateforme interactive permettant la gestion de groupes
+                                et d'utilisateurs.
+                                L'objectif était de fournir une expérience utilisateur fluide et engageante, avec un
+                                système de création et
+                                de gestion de groupes, ainsi qu'une gestion des rôles et permissions des membres. Le
+                                design de l’interface a
+                                été optimisé pour garantir une navigation simple et intuitive, tout en assurant une
+                                intégration harmonieuse
+                                entre la conception et le développement.
+                            </p>
+                            <div class="Techno">
+                                <img src="./assets/wordpress.png" alt="">
+                                <img src="./assets/Elementor.webp" alt="">
+                                <img src="./assets/AdobeXd.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <footer class="footer">
         <div class="social">
-            <a href="https://www.linkedin.com/in/jonathanluembe/"><i class='bx bxl-linkedin' ></i></a>
-            <a href="https://github.com/JoeLeDev"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/jonathanluembe/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/JoeLeDev"><i class='bx bxl-github'></i></a>
         </div>
 
 
         <ul class="list">
             <p class="copyright">
-                ©   Jonathan Luembe 2025. All rights reserved.
+                © Jonathan Luembe 2025. All rights reserved.
             </p>
         </ul>
     </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="/api/mail.js"></script>
 </body>
+
 </html>

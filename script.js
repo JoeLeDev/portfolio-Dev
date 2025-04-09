@@ -4,6 +4,7 @@ const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('header nav a');
 const contactForm = document.getElementById('contact-form');
 
+
 window.onscroll = () => {
     sections.forEach(section => {
         let top = window.scrollY;
@@ -78,3 +79,41 @@ function toggleText(element) {
 document.querySelectorAll('.service-text').forEach(element => {
     element.style.display = "none";
 });
+ 
+document.addEventListener("DOMContentLoaded", () => {
+    new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        1048: { slidesPerView: 2 },
+      }
+    });
+  });
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // ne l'observe qu'une fois
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+  
+    document.querySelectorAll('.project-reveal').forEach(el => {
+      observer.observe(el);
+    });
+  });
+  
